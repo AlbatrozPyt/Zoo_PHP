@@ -25,19 +25,14 @@
         if ($res->num_rows > 0) {
             $res = $conn->query("SELECT * FROM imagens WHERE Apelido_Animais = '$nomeAnimal'");
             if ($res->num_rows > 0) {
+                echo "<h1> $nomeAnimal </h1>";
                 while ($row = $res->fetch_assoc()) {
                     $animal = $row["Apelido_Animais"];
                     $image = $row["Caminho"];
+                    echo "<img src='$image' alt=''>";
                 }
             } else $res = 'false';
         } else $res = 'false';
-
-        if ($image != "") {
-            echo "
-                    <h1>$animal</h1>
-                    <img class='img-animal' src='$image' alt=''>
-                    ";
-        }
 
 
         ?>

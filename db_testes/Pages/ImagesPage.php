@@ -31,9 +31,9 @@
                     <?php
                     include "../Conexao/connect.php";
                     global $conn;
-                    $res = $conn->query("SELECT Apelido_Animais FROM imagens");
+                    $res = $conn->query("SELECT Apelido FROM nomenclatura");
                     while ($row = $res->fetch_assoc()) {
-                        echo '<option value="' . $row['Apelido_Animais'] . '">' . $row['Apelido_Animais'] . '</option>';
+                        echo '<option value="' . $row['Apelido'] . '">' . $row['Apelido'] . '</option>';
                     }
                     ?>
                 </select>

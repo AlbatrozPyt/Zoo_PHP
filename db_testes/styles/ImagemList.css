@@ -16,37 +16,83 @@
 body {
     display: flex;
     justify-content: center;
+    /*background: #9af69a;*/
+    background-image: url("../assets/images/background-animals-list.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
 }
 
 .container-imagens {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     height: 100%;
     width: 80%;
+    border: 1px whitesmoke solid;
+    background: rgba(232, 255, 240, 0.5);
+    backdrop-filter: blur(7px);
+    border-radius: 20px;
+    margin-top: 50px;
 }
 
 .container-imagens h1 {
     margin-top: 80px;
     font-family: Poppins, serif;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 img {
     margin-top: 50px;
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
+    width: 15%;
+    height: 15%;
+    border-radius: 20px;
+    transition: 1s;
+    padding: 10px;
+    animation: brilliance 3.5s;
 }
+
+@keyframes brilliance {
+    0% {
+        transform: rotate3d(1, 2, -1, 90deg);
+    }
+    50% {
+        transform: rotate3d(-1, -1, -1, 180deg);
+    }
+    100% {
+        transform: rotate3d(-1, 1, -1, 360deg);
+        /*rotate: 360deg;*/
+    }
+}
+
+
+img:hover {
+    /*box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);*/
+    width: 20%;
+    height: 20%;
+    transition: 1.5s;
+}
+
 
 .back-arrow {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     left: 0;
-    top: 0;
+    top: 20px;
     margin: 15px;
+    background: transparent;
+    border: none;
+    animation: none;
 }
 
-
+.back-arrow:hover {
+    box-shadow: none;
+    width: 90px;
+    height: 90px;
+    top: 15px;
+    left: 15px;
+    transition: 0.5s;
+}
 
