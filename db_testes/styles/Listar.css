@@ -1,0 +1,19 @@
+table {
+    width: 570px;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    overflow: scroll;
+    border: 1px solid white;
+}
+table th {
+    font-family: Poppins, serif;
+    font-size: 25px;
+}
+table td {
+    font-family: Poppins, serif;
+    font-size: 15px;
+}

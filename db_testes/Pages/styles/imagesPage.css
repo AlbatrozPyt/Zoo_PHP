@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins Black";
+    src: url(../../assets/fonts/Poppins/Poppins-Black.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-image: url("../../assets/images/Background-image-page.jpg");
+    background-size: cover;
+}
+
+/* main */
+.main {
+    margin-top: 80px;
+    width: 80%;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main h1 {
+    font-family: "Poppins Black", serif;
+    font-size: 40px;
+    border-bottom: 2px solid;
+    color: white;
+}
+
+.main h2 {
+    font-family: Poppins, serif;
+    font-size: 25px;
+}
+
+/* formularios */
+.formPost {
+    position: relative;
+    z-index: 1;
+    width: 570px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    font-family: Poppins, serif;
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.formPost input {
+    height: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.formPost select {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+.formPost button {
+    align-self: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid;
+    background: transparent;
+    color: white;
+    font-family: Poppins, serif;
+}
+
+input[type="file"] {
+    padding: 0;
+    position: relative;
+    z-index: -1;
+    left: 70px;
+    bottom: 25px;
+    color: white;
+    font-family: Poppins, serif;
+    font-size: 13px;
+}
+
+.labelFile {
+    width: 200px;
+    height: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+}
