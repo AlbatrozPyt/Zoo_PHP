@@ -3,4 +3,4 @@ session_start();
 echo  "logout";
 session_destroy();
 
-header("Location: ../Pages/LoginPage.php");
+header("Location: /db_testes/login");

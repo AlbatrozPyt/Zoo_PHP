@@ -6,16 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" href="styles/LoginPage.css">
+    <link rel="stylesheet" href="/db_testes/Pages/styles/LoginPage.css">
+    <link rel="stylesheet" href="/db_testes/styles/Header.css">
 </head>
 <body>
     <?php
-        include "../Components/Header/Header.php";
+        include "../Components/Header.php";
     ?>
 
     <div class="main-login">
 
-        <form class="login" action="../CRUD/Login.php" method="post">
+        <form class="login" action="/db_testes/CRUD/Login.php" method="post">
             <h1>Login</h1>
 
             <label>

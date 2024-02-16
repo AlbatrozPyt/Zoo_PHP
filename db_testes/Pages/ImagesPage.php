@@ -6,15 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Imagens dos animais</title>
-    <link rel="stylesheet" href="styles/imagesPage.css">
+    <link rel="stylesheet" href="Pages/styles/imagesPage.css">
+    <link rel="stylesheet" href="/db_testes/styles/Header.css">
 </head>
 <body>
     <?php
-        include "../Components/Header/Header.php";
+        include "../Components/Header.php";
 
         if ($_SESSION['User'] === null || $_SESSION['Permissao'] === "Comum") {
-           if ($_SESSION['User'] === null) header("Location: ./LoginPage.php");
-           else header("Location: ../index.php");
+           if ($_SESSION['User'] === null) header("Location: login");
+           else header("Location: index.php");
         }
     ?>
 

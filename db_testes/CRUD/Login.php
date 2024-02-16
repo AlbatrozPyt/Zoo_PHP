@@ -21,9 +21,9 @@
    }
 
    if ($resp === 'false') {
-       header("Location: ../Pages/LoginPage.php");
+       header("Location: login");
    } else {
-        header("Location: ../index.php");
+        header("Location: ../home");
    }
 
 

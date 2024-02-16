@@ -6,10 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Database tests</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="./styles/Header.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/Listar.css">
 </head>
 <body>
-    <?php  include "Components/Header/Header.php"?>
+    <?php include "Components/Header.php" ?>
 
     <div class="main">
     <h1>Index Page</h1>
@@ -71,7 +73,7 @@
         <?php
         include("CRUD/Listar.php");
 
-        if ($_SESSION['Permissao'] !== 'Comum') echo '<a href="Pages/ImagesPage.php">Ver imagens...</a>';
+        if ($_SESSION['Permissao'] !== 'Comum') echo '<a href="/db_testes/ver-imagens">Ver imagens...</a>';
         ?>
 
     </div>

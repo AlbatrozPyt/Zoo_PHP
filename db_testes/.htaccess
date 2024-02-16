@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f;
+RewriteRule ^home$ index.php [L]
+RewriteRule ^login$ Pages/LoginPage.php [L]
+RewriteRule ^ver-imagens$ Pages/ImagesPage.php [L]
